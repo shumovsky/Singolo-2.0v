@@ -5,11 +5,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./sass/font.css">
     <link rel="stylesheet" href="./sass/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="hader__logo">
+                <h1>singolo <span>*</span></h1>
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__link">Home</li>
+                    <li class="navigation__link">Services</li>
+                    <li class="navigation__link">Portfolio</li>
+                    <li class="navigation__link">About</li>
+                    <li class="navigation__link">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="wrapper slider__wrapper">
+            <button>
+                <object data="./img/arrow-left.svg" type="image/svg+xml"></object>
+            </button>
+            <img src="./img/Phone-vertical.png" alt="Phone">
+            <img src="./img/Phone-horisontal.png" alt="Phone">
+            <button><object data="./img/arrow-right.svg" type="image/svg+xml"></object></button>
+        </div>
+    </section>
+    <section class="services">
+        <div class="wrapper services__wrapper">
+            <h3>Our Services</h3>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+                mauris condimentum nibh.</p>
+            <div class="services__item">
+                <div class="design">
+                    <img src="./img/pen-ico.png" alt="pen">
+                    <h5>Custom Design</h5>
+                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut,
+                        ultrices velit.</p>
+                </div>
+                <div class="ideas">
+                    <img src="./img/pulb-ico.png" alt="pulb">
+                    <h5>Inovative Ideas</h5>
+                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id
+                        lorem.</p>
+                </div>
+                <div class="heart">
+                    <img src="./img/heart-ico.png" alt="heart">
+                    <h5>Love Is The Answer</h5>
+                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
+                        condimentum.</p>
+                </div>
+                <div class="layout">
+                    <img src="./img/phone-ico.png" alt="phone">
+                    <h5>Responsive Layout</h5>
+                    <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit
+                        leo.</p>
+                </div>
+                <div class="support">
+                    <img src="./img/babble-ico.png" alt="babble">
+                    <h5>24 / 7 Support</h5>
+                    <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque
+                        egestas venenatis lorem .</p>
+                </div>
+                <div class="star">
+                    <img src="./img/star-ico.png" alt="star">
+                    <h5>Feel Like A Star</h5>
+                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="wrapper portfolio__wrapper">
+            <h3>Portfolio</h3>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <div class="portfolio__select">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Artwork</a></li>
+                </ul>
+                <div>
+                    <img src="./img/portfolio-1.png" alt="picture">
+                    <img src="./img/portfolio-2.png" alt="picture">
+                    <img src="./img/portfolio-3.png" alt="picture">
+                    <img src="./img/portfolio-4.png" alt="picture">
+                    <img src="./img/portfolio-5.png" alt="picture">
+                    <img src="./img/portfolio-6.png" alt="picture">
+                    <img src="./img/portfolio-7.png" alt="picture">
+                    <img src="./img/portfolio-8.png" alt="picture">
+                    <img src="./img/portfolio-9.png" alt="picture">
+                    <img src="./img/portfolio-10.png" alt="picture">
+                    <img src="./img/portfolio-11.png" alt="picture">
+                    <img src="./img/portfolio-12.png" alt="picture">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="wrapper about__wrapper">
+            <h3>About Us</h3>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+                mauris condimentum nibh.</p>
+            <div class="layout-3-column">
+                <div class="about__content">
+                    <img src="./img/photo-1.jpg" alt="photo">
+                    <h5 class="about__title">Adam Jensen</h5>
+                    <p class="about__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
+                        nec rutrum tellus dolor id
+                        lorem.</p>
+                    <ul class="social__link">
+                        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
+                        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
+                        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
+                    </ul>
+                </div>
+                <div class="about__content">
+                    <img src="./img/photo-2.jpg" alt="photo">
+                    <h5 class="about__title">Desmond Miles</h5>
+                    <p class="about__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                        laoreet, viverra lacus ut, ultrices velit.</p>
+                    <ul class="social__link">
+                        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
+                        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
+                        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
+                    </ul>
+                </div>
+                <div class="about__content">
+                    <img src="./img/photo-3.jpg" alt="photo">
+                    <h5 class="about__title">Scolara Visari</h5>
+                    <p class="about__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                        consequat felis. Quisque condimentum.</p>
+                    <ul class="social__link">
+                        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
+                        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
+                        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="wrapper">
+            <h3>Get a Quote</h3>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+                erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
+                mauris condimentum nibh.</p>
+            <div class="contact">
+                <div class="layout-2-colum">
+                    <div class="contact__input">
+                        <form action method="POST">
+                            <div class="">
+                                <input type="text" name="name" placeholder="Name (Required)">
+                                <input type="email" name="email" placeholder="Email (Required)">
+                                <input type="text" name="subject" placeholder="Subject">
+                            </div>
+                            <textarea name="question" rows="13" placeholder="Describe your project in detail..."
+                                class="contact-us__line"></textarea>
+                        </form>
+                    </div>
+                    <div class="contact__info">
+                        <h5 class="contact__info-title">Contact Information</h5>
+                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                            Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                            turpis, et consequat felis. </p>
+                        <ul>
+                            <li>
+                                <address><i class="fas fa-map-marker-alt"></i>Elm St. 14/05 Lost City</address>
+                            </li>
+                            <li><a href="tel:03528 331 86 35"><i class="fas fa-phone"></i>03528 331 86 35</a></li>
+                            <li><a href="mailto:info@singolo.com"><i class="fas fa-envelope"></i>info@singolo.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
 
+        </div>
+    </footer>
+    <p>&#169; Copyright 2020</p>
+    <ul class="social__link">
+        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
+        <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
+        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
+        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
+    </ul>
 </body>
 
 </html>
