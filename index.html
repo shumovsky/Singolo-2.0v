@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link rel="stylesheet" href="./sass/font.css">
     <link rel="stylesheet" href="./sass/style.css">
 </head>
@@ -28,55 +30,81 @@
     </header>
     <section class="slider">
         <div class="wrapper slider__wrapper">
-            <button>
+            <button class="slider__button">
                 <object data="./img/arrow-left.svg" type="image/svg+xml"></object>
             </button>
-            <img src="./img/Phone-vertical.png" alt="Phone">
-            <img src="./img/Phone-horisontal.png" alt="Phone">
-            <button><object data="./img/arrow-right.svg" type="image/svg+xml"></object></button>
+            <div class="slider1">
+                <img src="./img/Phone-vertical.png" alt="Phone" class="phone-vertical">
+                <img src="./img/Phone-horisontal.png" alt="Phone" class="phone-horizontal">
+            </div>
+            <button class="slider__button right"><object data="./img/arrow-right.svg"
+                    type="image/svg+xml"></object></button>
         </div>
     </section>
     <section class="services">
         <div class="wrapper services__wrapper">
             <h3>Our Services</h3>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+            <p class="services__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                mollis, non commodo luctus, nisi
                 erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
                 mauris condimentum nibh.</p>
             <div class="services__item">
-                <div class="design">
+                <div class="design  serv">
                     <img src="./img/pen-ico.png" alt="pen">
-                    <h5>Custom Design</h5>
-                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut,
-                        ultrices velit.</p>
+                    <div class="specification">
+                        <h5>Custom Design</h5>
+                        <p class="serv__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                            laoreet, viverra lacus ut,
+                            ultrices velit.</p>
+                    </div>
                 </div>
-                <div class="ideas">
+                <div class="ideas serv">
                     <img src="./img/pulb-ico.png" alt="pulb">
-                    <h5>Inovative Ideas</h5>
-                    <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id
-                        lorem.</p>
+                    <div class="specification">
+                        <h5>Inovative Ideas</h5>
+                        <p class="serv__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                            purus,
+                            nec rutrum tellus dolor id
+                            lorem.</p>
+                    </div>
                 </div>
-                <div class="heart">
+                <div class="heart serv">
                     <img src="./img/heart-ico.png" alt="heart">
-                    <h5>Love Is The Answer</h5>
-                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
-                        condimentum.</p>
+                    <div class="specification">
+                        <h5>Love Is The Answer</h5>
+                        <p class="serv__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+                            et
+                            consequat felis. Quisque
+                            condimentum.</p>
+                    </div>
                 </div>
-                <div class="layout">
+                <div class="layout serv">
                     <img src="./img/phone-ico.png" alt="phone">
-                    <h5>Responsive Layout</h5>
-                    <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit
-                        leo.</p>
+                    <div class="specification">
+                        <h5>Responsive Layout</h5>
+                        <p class="serv__description">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit
+                            nunc ligula. Praesent elit
+                            leo.</p>
+                    </div>
                 </div>
-                <div class="support">
+                <div class="support serv">
                     <img src="./img/babble-ico.png" alt="babble">
-                    <h5>24 / 7 Support</h5>
-                    <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque
-                        egestas venenatis lorem .</p>
+                    <div class="specification">
+                        <h5>24 / 7 Support</h5>
+                        <p class="serv__description">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a
+                            sem
+                            erat. Pellentesque
+                            egestas venenatis lorem .</p>
+                    </div>
                 </div>
-                <div class="star">
+                <div class="star serv">
                     <img src="./img/star-ico.png" alt="star">
-                    <h5>Feel Like A Star</h5>
-                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                    <div class="specification">
+                        <h5>Feel Like A Star</h5>
+                        <p class="serv__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+                            Fusce
+                            vitae aliquam tellus.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,15 +112,16 @@
     <section class="portfolio">
         <div class="wrapper portfolio__wrapper">
             <h3>Portfolio</h3>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <p class="portfolio__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+                lacinia odio sem nec elit.</p>
             <div class="portfolio__select">
-                <ul>
+                <ul class="portfolio_link">
                     <li><a href="#">All</a></li>
                     <li><a href="#">Web Design</a></li>
                     <li><a href="#">Graphic Design</a></li>
                     <li><a href="#">Artwork</a></li>
                 </ul>
-                <div>
+                <div class="portfolio__img">
                     <img src="./img/portfolio-1.png" alt="picture">
                     <img src="./img/portfolio-2.png" alt="picture">
                     <img src="./img/portfolio-3.png" alt="picture">
@@ -112,45 +141,50 @@
     <section class="about">
         <div class="wrapper about__wrapper">
             <h3>About Us</h3>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+            <p class="about__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                mollis, non commodo luctus, nisi
                 erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
                 mauris condimentum nibh.</p>
             <div class="layout-3-column">
                 <div class="about__content">
-                    <img src="./img/photo-1.jpg" alt="photo">
+                    <img src="./img/photo-1.jpg" alt="photo" class="about__photo">
                     <h5 class="about__title">Adam Jensen</h5>
-                    <p class="about__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
+                    <p class="content__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                        purus,
                         nec rutrum tellus dolor id
                         lorem.</p>
                     <ul class="social__link">
                         <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
                         <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
-                        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
-                        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
+                        <li><a href="https://twitter.com/"><img src="./img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
                     </ul>
                 </div>
                 <div class="about__content">
-                    <img src="./img/photo-2.jpg" alt="photo">
+                    <img src="./img/photo-2.jpg" alt="photo" class="about__photo">
                     <h5 class="about__title">Desmond Miles</h5>
-                    <p class="about__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                    <p class="content__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
                         laoreet, viverra lacus ut, ultrices velit.</p>
                     <ul class="social__link">
-                        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a>
+                        </li>
                         <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
-                        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
-                        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
+                        <li><a href="https://twitter.com/"><img src="./img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
                     </ul>
                 </div>
                 <div class="about__content">
-                    <img src="./img/photo-3.jpg" alt="photo">
+                    <img src="./img/photo-3.jpg" alt="photo" class="about__photo">
                     <h5 class="about__title">Scolara Visari</h5>
-                    <p class="about__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                    <p class="content__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+                        et
                         consequat felis. Quisque condimentum.</p>
                     <ul class="social__link">
-                        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a>
+                        </li>
                         <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
-                        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
-                        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
+                        <li><a href="https://twitter.com/"><img src="./img/twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
                     </ul>
                 </div>
             </div>
@@ -159,7 +193,8 @@
     <section class="quote">
         <div class="wrapper">
             <h3>Get a Quote</h3>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
+            <p class="quote__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                mollis, non commodo luctus, nisi
                 erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
                 mauris condimentum nibh.</p>
             <div class="contact">
@@ -177,10 +212,11 @@
                     </div>
                     <div class="contact__info">
                         <h5 class="contact__info-title">Contact Information</h5>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                        <p class="contact__description">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                            nibh. Fusce vitae aliquam tellus.
                             Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
                             turpis, et consequat felis. </p>
-                        <ul>
+                        <ul class="contact__info">
                             <li>
                                 <address><i class="fas fa-map-marker-alt"></i>Elm St. 14/05 Lost City</address>
                             </li>
@@ -194,17 +230,16 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="wrapper">
-
+        <div class="wrapper footer__wrapper">
+            <p>&#169; Copyright 2020</p>
+            <ul class="social__link">
+                <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
+                <li><a href="https://twitter.com/"><img src="./img/twitter.png" alt="twitter"></a></li>
+                <li><a href="https://www.linkedin.com/"><img src="./img/linkedin.png" alt="linkedin"></a></li>
+            </ul>
         </div>
     </footer>
-    <p>&#169; Copyright 2020</p>
-    <ul class="social__link">
-        <li><a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook"></a></li>
-        <li><a href="https://www.google.com/"><img src="./img/google.png" alt="google"></a></li>
-        <li><a href="https://twitter.com/"></a><img src="./img/twitter.png" alt="twitter"></li>
-        <li><a href="https://www.linkedin.com/"></a><img src="./img/linkedin.png" alt="linkedin"></li>
-    </ul>
 </body>
 
 </html>

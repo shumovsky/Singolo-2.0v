@@ -1,9 +1,20 @@
-// constants
+// abstract
 @import "./abstract/constants";
+@import "./abstract/mixins";
+@import "./abstract/placeholder";
 
 // base
 @import "./base/base";
-@import "./base/mixins";
 
 // layouts
 @import "./layouts/wrapper";
+@import "./layouts/columns";
+
+// components
+@import "./components/header";
+@import "./components/slider";
+@import "./components/services";
+@import "./components/portfolio";
+@import "./components/about";
+@import "./components/quote";
+@import "./components/footer";

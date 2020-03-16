@@ -1,0 +1,40 @@
+.services {
+  background: $color-background-light;
+  border-bottom: solid 6px $color-light;
+}
+
+.services__wrapper {
+  padding-bottom: 30px;
+}
+
+.services__description {
+  @extend %font;
+  @include text;
+}
+
+.services__item {
+  @include columns($width: 32%);
+  padding-top: 28px;
+  > * {
+    margin-bottom: 14px;
+  }
+}
+
+.serv {
+  display: flex;
+}
+.serv {
+  img {
+    height: 60px;
+  }
+}
+
+.serv__description {
+  @extend %font;
+  @include font($size: 1.2rem, $height: 2.2rem, $weight: normal);
+  color: $color-text;
+}
+
+.specification {
+  padding-left: 22px;
+}

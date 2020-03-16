@@ -1,0 +1,43 @@
+.about {
+  background: $color-background-light;
+  border-bottom: 6px solid $color-light;
+}
+
+.about__description {
+  @include text;
+  padding-bottom: 27px;
+}
+
+.layout-3-column {
+  @include columns($width: 30%);
+  flex-wrap: nowrap;
+  padding-bottom: 39px;
+}
+.about__title {
+  padding-bottom: 10px;
+}
+
+.about__content {
+  margin-right: 20px;
+}
+
+.about__photo {
+  width: 300px;
+  height: 300px;
+  padding-bottom: 13px;
+}
+
+.content__description {
+  @extend %font;
+  @include font($size: 1.2rem, $height: 2.2rem, $weight: normal);
+  color: $color-text;
+  margin: 0;
+}
+
+.social__link {
+  display: flex;
+  list-style: none;
+  padding: 8px 0;
+  width: 152px;
+  justify-content: space-between;
+}
