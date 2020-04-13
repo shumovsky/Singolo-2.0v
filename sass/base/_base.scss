@@ -26,6 +26,13 @@ h1 {
 
 h1 {
   @extend %transition;
+  display: inline-block;
+  @include media-mobile-small {
+    margin-left: 36px;
+  }
+  @include media-mobile-medium {
+    margin-left: 60px;
+  }
 }
 
 h3 {
@@ -41,4 +48,10 @@ h5 {
   @include font($size: 1.8rem, $height: 1.8rem, $weight: 900);
   margin: 0;
   color: $color-section;
+}
+
+p {
+  @include media-mobile-small {
+    text-align: justify;
+  }
 }

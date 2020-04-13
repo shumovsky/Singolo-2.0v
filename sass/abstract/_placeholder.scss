@@ -9,3 +9,13 @@
 %font {
     font-family: "Lato-regular", sans-serif;
 }
+
+%hamburger-line {
+    position: absolute;
+    background-color: $color-light;
+    border-radius: 5px;
+    display: inline-block;
+    height: 3px;
+    content: "";
+    width: 100%
+}

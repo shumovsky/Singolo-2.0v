@@ -8,4 +8,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  p {
+    @include media-mobile-small {
+      text-align: left;
+    }
+  }
 }

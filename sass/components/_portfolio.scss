@@ -20,8 +20,20 @@
   display: flex;
   margin: 0 auto;
   padding: 0 2px 18px;
+  @include media-mobile-small {
+    display: block;
+  }
+  @include media-mobile-medium {
+    display: block;
+  }
   li {
     margin: 0 10px 0 0;
+    @include media-mobile-small {
+      margin-bottom: 8px;
+    }
+    @include media-mobile-medium {
+      margin-bottom: 8px;
+    }
     a {
       @include font($size: 1.2rem, $height: 1.2rem, $weight: normal);
       color: $color-text;
@@ -40,8 +52,29 @@
 
 .portfolio__img {
   display: grid;
-  grid-template-columns: 216px 216px 216px 216px;
-  grid-template-rows: 184px 184px 184px;
+  grid-template-columns: 25% 25% 25% 25%;
+  // grid-template-rows: 184px 184px 184px;
   gap: 23px 24px;
   padding-bottom: 69px;
+  img {
+    width: 100%;
+    // height: 100%;
+  }
+  @include media-tablet {
+    grid-template-columns: 216px 216px 216px;
+  }
+  @include media-mobile-small {
+    grid-template-columns: 220px;
+    gap: 4px 4px;
+    img {
+      width: 100%;
+    }
+  }
+  @include media-mobile-medium {
+    grid-template-columns: 278px;
+    grid-template-rows: auto;
+    img {
+      width: 100%;
+    }
+  }
 }

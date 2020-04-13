@@ -9,6 +9,10 @@
   align-items: flex-end;
 }
 
+.header__logo {
+  display: inline-block;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -26,6 +30,15 @@
     &:hover {
       color: $color-brand;
     }
+  }
+  @include media-mobile-small {
+    display: none;
+  }
+  @include media-mobile-medium {
+    display: none;
+  }
+  @include media-mobile-big {
+    display: none;
   }
 }
 

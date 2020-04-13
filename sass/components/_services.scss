@@ -18,6 +18,9 @@
   > * {
     margin-bottom: 14px;
   }
+  @include media-tablet {
+    @include columns($width: 100%);
+  }
 }
 
 .serv {
@@ -26,6 +29,9 @@
 .serv {
   img {
     height: 60px;
+  }
+  p {
+    text-align: justify;
   }
 }
 
@@ -37,4 +43,10 @@
 
 .specification {
   padding-left: 22px;
+  @include media-mobile-small {
+    width: 150px;
+  }
+  @include media-mobile-medium {
+    width: 200px;
+  }
 }

@@ -23,11 +23,42 @@
 .phone-vertical {
   margin-left: 60px;
   margin-top: 40px;
+  @include media-tablet {
+    width: 200px;
+    height: 364px;
+  }
+  @include media-mobile-small {
+    width: 68px;
+    height: 125px;
+    margin-left: 15px;
+    margin-top: 60px;
+  }
+  @include media-mobile-medium {
+    width: 81px;
+    height: 153px;
+    margin: 46px 0 0 23px;
+  }
 }
 
 .phone-horizontal {
   margin-left: 58px;
   margin-bottom: 112px;
+  @include media-tablet {
+    width: 387px;
+    height: 189px;
+    margin-left: 0;
+  }
+  @include media-mobile-small {
+    width: 131px;
+    height: 69px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  @include media-mobile-medium {
+    width: 157px;
+    height: 84px;
+    margin: 0 0 20px;
+  }
 }
 
 .slider-svg {

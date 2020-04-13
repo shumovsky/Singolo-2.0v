@@ -17,9 +17,18 @@
 
 .layout-2-colum {
   display: grid;
-  grid-template-columns: 618px 300px;
+  grid-template-columns: 60% 40%;
   gap: 0 22px;
   padding-bottom: 65px;
+  @include media-tablet {
+    grid-template-columns: 422px 221px;
+  }
+  @include media-mobile-small {
+    display: block;
+  }
+  @include media-mobile-medium {
+    display: block;
+  }
 }
 
 input,
