@@ -274,6 +274,11 @@ h5 {
 .right {
   right: 38px;
 }
+@media (max-width: 320px) {
+  .right {
+    right: 20px;
+  }
+}
 
 .services {
   background: #f2f2f2;

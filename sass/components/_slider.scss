@@ -81,4 +81,7 @@
 
 .right {
   right: 38px;
+  @include media-mobile-small {
+    right: 20px;
+  }
 }
