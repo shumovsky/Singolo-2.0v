@@ -61,7 +61,10 @@
     // height: 100%;
   }
   @include media-tablet {
-    grid-template-columns: 216px 216px 216px;
+    grid-template-columns: 326px 326px;
+  }
+  @include media-mobile-big {
+    grid-template-columns: 320px;
   }
   @include media-mobile-small {
     grid-template-columns: 220px;
